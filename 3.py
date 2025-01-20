@@ -61,7 +61,7 @@ while True:
         smiles = smile_cascade.detectMultiScale(
             roi_gray,
             scaleFactor=1.7,
-            minNeighbors=20,  # число, чувствительное к ложным срабатываниям
+            minNeighbors=20,  
             minSize=(25, 25)
         )
         # Если найдена хотя бы одна "улыбка", считаем, что пользователь улыбается
@@ -98,7 +98,7 @@ while True:
 
     cv2.imshow('Frame', frame)
 
-    # Нажмите ESC, чтобы выйти
+   
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
